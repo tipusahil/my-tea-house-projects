@@ -1,37 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my tea house</title>
+
+    <!-- google font manrope linkup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn linkup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind & daisy UI linkup -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <!-- js for tailwind custom design -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        // 'primary_gradient': 'red-400 purple-600',
+                        // 'p_color': '#777777',
+                        'p_color': 'gray-500',
+
+                        // bg-gradient-to-r from-red-400 to-purple-600
+                    }
+                }
+            }
+        }
+    </script>
+
+
 </head>
-<body class="">
-  
- <!--header start  -->
- <header>
-    
-    
-<div class="nav border-8 border-red-700"> </div>
- </header>
- <!--header end  -->
+
+<body>
+
+    <!--header start  -->
+    <header class="container mx-auto">
+
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row">
+
+                <div>
+                    <h1 class="text-5xl font-extraboldbold">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="bg-primary_gradient btn btn-primary ">Explore More></button>
+                </div>
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <div class="badge_div shadow-2xl  -mt-14 bg-white w-44 space-x-3 flex items-center">
+                        <div class="star">
+                            <i class="text-3xl text-amber-400 fa-solid fa-star"></i>
+                        </div>
+                        <!-- bg-gradient-to-r from-purple-500 to-pink-500 -->
+                        <div>
+                            <h2 class="text-3xl text-semibold">5.00</h2>
+                            <p class="text-p_color">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--header end  -->
+
+    <!--main start  -->
+    <main class="container mx-auto my-40">
+
+        <!-- sec1 start -->
+        <section class="sec1_our text-center border-8">
+            <h2 class="text-3xl font-semibold mb-3">Our Featured Products</h2>
+            <p class="text-p_color mx-auto lg:max-w-3xl">There are many variations of passages of Lorem Ipsum available,
+                but the majority
+                have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                slightly believable. </p>
 
 
+            <!-- sec1 grid_container -->
+            <div class="grid_container my-10 gap-8 grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+
+                <!-- cofee 1 -->
+                <div class="card py-5 drop-shadow-2xl  bg-gradient-to-b from-slate-200 to-white">
+                    <figure>
+                        <img src="images/tea-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body  items-center ">
+                        <h2 class="card-title ">Milk Tea</h2>
+                        <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
 
 
- <!--main start  -->
- <main>
+                <!-- cofee 2 -->
+                <div class="card py-5 drop-shadow-2xl  bg-gradient-to-b from-slate-200 to-white">
+                    <figure>
+                        <img src="images/tea-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body   items-center ">
+                        <h2 class="card-title ">Black Tea</h2>
+                        <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
 
-</main>
- <!--main end  -->
+                    </div>
+                </div>
 
 
- <!--footer start  -->
- <footer>
+                <!-- cofee 3 -->
+                <div class="card py-5 drop-shadow-2xl  bg-gradient-to-b from-slate-200 to-white">
+                    <figure>
+                        <img src="images/tea-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body  items-center ">
+                        <h2 class="card-title ">Lemon Tea</h2>
+                        <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
 
- </foote>
- <!--footer end  -->
+                    </div>
+                </div>
 
+
+                <!-- cofee 4 -->
+                <div class="card py-5 drop-shadow-2xl  bg-gradient-to-b from-slate-200 to-white">
+                    <figure>
+                        <img src="images/tea-4.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body  items-center ">
+                        <h2 class="card-title ">Green Tea</h2>
+                        <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- sec1 end -->
+
+
+        <!-- sec2 start great tea -->
+
+        <section class="sec2_great_tea my-40 space-x-5 items-center flex">
+
+            <div class="cofee_side flex-1 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-lg">
+
+                <div class="gradi_1 h-36   bg-gradient-to-r from-red-200 to-white rounded-lg">ji</div>
+
+                <div class="img_box px-3 flex justify-center bg-lime-50 row-span-2 rounded-lg">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="img_box py-3 flex justify-center bg-lime-50 row-span-2 rounded-lg">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="gradi_2 h-36 bg-gradient-to-r from-lime-200 to-white  rounded-lg">ij</div>
+
+            </div>
+            <div class="content_side space-y-5 flex-1 ">
+
+                <h2 class="text-3xl font-semibold">Great Tea, Freshly Presented</h2>
+                <p class="text-gray-500">The meaning of gong cha is chanese is to provide the best tea to emperor from
+                    all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong
+                    cha had been deeply appreciated by its custoers because of good words of mouth and unique customized
+                    service orginated from Taiwan.</p>
+                <h2 class="text-xl text-semibold"> Unique Taste</h2>
+                <p class="text-gray-500">A Unique and different style from other teapots gives a luxurious and
+                    minimalist impression</p>
+                <h2 class="text-xl text-semibold">Premium Quality</h2>
+                <p class="text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+    <!--main end  -->
+
+
+    <!--footer start  -->
+    <footer>
+
+    </footer>
+    <!--footer end  -->
 
 
 </body>
+
 </html>
